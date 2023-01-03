@@ -1,7 +1,7 @@
 from unittest import result
 
 
-def fib(n = 5):
+def fib(n = 5): 
     result = []
     a, b = 0, 1
     for _ in range(n):
