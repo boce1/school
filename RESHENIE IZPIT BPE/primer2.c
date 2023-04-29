@@ -15,10 +15,11 @@ int main()
     int n = 100;
     char str[n];
 
-    while(fgets(str, n, fptr) != NULL)
+    while(fgets(str, n, fptr) != NULL) /* reding files with fgets() || fgets vrca parametaro char*str a ako ima greska ili EOF - NULL*/
     {
         printf("%s", str);
     }
+    
     //fseek(fptr, 5, SEEK_SET); // raboti samo pri r r+ w w+
     //fprintf(fptr, "==========");
 
@@ -26,12 +27,15 @@ int main()
     printf("Enter the sentence you want to add: ");
     gets(str);
     fprintf(fptr, "\n%s\n", str);
+   
     printf("\n###################\n");
-    char c;
+    
     fseek(fptr, 0, SEEK_SET); // ftell() e na kraj na fileo ka e mode-o "a" ili "a+"
-    while((c = fgetc(fptr)) != EOF)
+    char c;
+    while((c = fgetc(fptr)) != EOF) /* reading files with fgets || fgets vrca char ako e EOF tegaj vrca EOF*/
     {
         printf("%c", c);
     }
+    
     return 0;
 }
