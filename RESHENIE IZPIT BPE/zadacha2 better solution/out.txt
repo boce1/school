@@ -1,0 +1,18 @@
+Text Item:
+	Name: Honda
+	ID: 1
+	Date: 2023.04.03
+	Price: 20.32
+-------------
+Text Item:
+	Name: Mercedes
+	ID: 2
+	Date: 2023.04.03
+	Price: 10.32
+-------------
+Text Item:
+	Name: Golf
+	ID: 3
+	Date: 2023.04.03
+	Price: 2.78
+-------------
