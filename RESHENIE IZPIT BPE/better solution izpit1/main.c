@@ -46,7 +46,10 @@ pet makePet()
 {
     FILE *fptr;
     fptr = fopen("animalsText.txt", "a");
-
+    if(fptr == NULL)
+    {
+        exit(1);
+    }
     pet temp;
     printf("Enter owner name: ");
     scanf("%s", temp.ownerName);
